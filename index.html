@@ -8,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- jQuery UI CSS (pour les animations) -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -291,7 +293,7 @@
         <div class="col-sm-6 col-lg-4">
           <div class="card border-0 shadow-sm text-center p-4 h-100">
             <i class="bi bi-person-circle fs-1 mb-3" style="color: #1CA7A6;"></i>
-            <h5 class="fw-bold">Fatima Zahr</h5>
+            <h5 class="fw-bold">Fatima Zahra</h5>
             <p class="text-muted">Trésorière</p>
           </div>
         </div>
@@ -319,6 +321,14 @@
             <p class="text-muted">Responsable Robotique</p>
           </div>
         </div>
+        <!-- Leader (Hassan Farsi) -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="card border-0 shadow-sm text-center p-4 h-100">
+            <i class="bi bi-person-circle fs-1 mb-3" style="color: #1CA7A6;"></i>
+            <h5 class="fw-bold">Hassan Farsi</h5>
+            <p class="text-muted">Leader / Fondateur</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -344,17 +354,22 @@
     <div class="container text-center">
       <p class="mb-2">&copy; 2026 INPT - Tous droits réservés</p>
       <div class="social-links">
-        <a href="#" class="text-turquoise me-3"><i class="bi bi-facebook fs-5"></i></a>
-        <a href="#" class="text-turquoise me-3"><i class="bi bi-instagram fs-5"></i></a>
-        <a href="#" class="text-turquoise me-3"><i class="bi bi-linkedin fs-5"></i></a>
-        <a href="#" class="text-turquoise"><i class="bi bi-github fs-5"></i></a>
+        <a href="#" class="text-turquoise me-3" data-bs-toggle="tooltip" title="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+        <a href="#" class="text-turquoise me-3" data-bs-toggle="tooltip" title="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+        <a href="#" class="text-turquoise me-3" data-bs-toggle="tooltip" title="LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+        <a href="#" class="text-turquoise" data-bs-toggle="tooltip" title="GitHub"><i class="bi bi-github fs-5"></i></a>
       </div>
     </div>
   </footer>
 
+  <!-- Scripts dans le bon ordre -->
+  <!-- jQuery d'abord -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQuery UI ensuite -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
   <!-- Bootstrap JS (avec Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS (alerte formulaire) -->
+  <!-- Custom JS avec toutes les fonctionnalités jQuery -->
   <script src="css/js/script.js"></script>
 </body>
 </html>
